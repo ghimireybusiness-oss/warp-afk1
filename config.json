@@ -1,0 +1,63 @@
+{
+  "host": "play.arctixmc.net",
+  "port": 25565,
+  "username": "Getosea",
+  "version": "1.21.4",
+  "password": "haha1223",
+  "useMicrosoftAuth": false,
+
+  "reconnectDelay": 120000,
+  "maxReconnectAttempts": 0,
+  "antiBotKickDelayMin": 300000,
+  "antiBotKickDelayMax": 900000,
+  "reconnectJitter": 30000,
+
+  "commandDelay": 5000,
+  "commandDelayJitter": 2500,
+  "typingDelayMin": 200,
+  "typingDelayMax": 600,
+
+  "antiBotSafeMode": true,
+
+  "joinSequence": {
+    "registerCommand": "/register haha1223 haha1223",
+    "loginCommand": "/login haha1223",
+    "postLoginDelay": 6000,
+    "warpCommands": [
+      "/server survival",
+      "/warp afk"
+    ],
+    "warpInterDelay": 8000
+  },
+
+  "autoEat": {
+    "enabled": true,
+    "startAt": 14,
+    "priority": "foodPoints",
+    "bannedFood": ["rotten_flesh", "spider_eye", "poisonous_potato", "pufferfish", "chicken"]
+  },
+
+  "autoSleep": {
+    "enabled": true,
+    "searchRadius": 16
+  },
+
+  "autoRespawn": {
+    "enabled": true,
+    "respawnDelay": 4000,
+    "executeBack": true,
+    "backCommand": "/back"
+  },
+
+  "antiAfk": {
+    "enabled": true,
+    "lookIntervalMin": 8000,
+    "lookIntervalMax": 20000,
+    "jumpIntervalMin": 45000,
+    "jumpIntervalMax": 120000,
+    "sneakIntervalMin": 60000,
+    "sneakIntervalMax": 180000,
+    "moveIntervalMin": 90000,
+    "moveIntervalMax": 240000
+  }
+}
